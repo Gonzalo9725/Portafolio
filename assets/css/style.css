@@ -1,0 +1,190 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.navbar a{
+    color: #0078ff;
+    text-decoration: none;
+}
+
+.logo{
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 48px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.navbar-sections{
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    font-size: 26px;
+    list-style: none;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 27em;
+    width: 100%;
+    color: white;
+}
+
+#home h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    margin-top: 11%;
+}
+
+.text-slider{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+.text-slider-items {
+    display: none;
+}
+
+.about-card{
+    display: flex;
+    background-image: url("../img/wall.jpg");
+    background-size: cover;
+}
+
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4e4e4e;
+    margin: 2% 7%;
+    background-color: white;
+    box-shadow: 0 0 30px #000;
+}
+
+.profile, .about-me{
+    flex-basis: 50%;
+}
+
+.about-me h1{
+    font-size: 45px;
+    margin-left: 4%;
+    border-bottom: 5px solid #0078ff;
+    width: fit-content;
+}
+.about-me p{
+    font-size: 17px;
+    text-align: justify;
+    width: 60%;
+    line-height: 24px;
+}
+
+.profile img{
+    width: 178px;
+    border-radius: 100%;
+    padding-top: 11px;
+    padding-left: 11px;
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.personal-info p{
+    margin: 9px;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+.skills h2{
+    font-size: 35px;
+    margin-left: 15px;
+}
+
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4%;
+}
+
+.skills-list svg{
+    width: 50px;
+    padding-left: 9%;
+    transition: transform 700ms;
+}
+
+.skills-list div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-right: 16px;
+}
+
+.skills-list svg:hover{
+    transform: scale(1.4);
+}
+
+@media screen and (max-width: 770px) {
+
+    .info{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .profile, .about-me{
+        flex-basis: 100%;
+    }
+    .navbar{
+        height: 2em;
+    }
+    .navbar-sections, .logo{
+        display: none;
+    }
+
+    #home{
+        height: 15em;
+    }
+
+    .about-me p {
+        width: 94%;
+        margin-left: 2%;
+    }
+}
+@media screen and (max-width: 530px) {
+    #home h1{
+        font-size: 40px;
+    }
+
+    .skills-list svg{
+        width: 30px;
+    }
+
+    .skills-list p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 420px) {
+    #home h1{
+        font-size: 31px;
+    }
+}
