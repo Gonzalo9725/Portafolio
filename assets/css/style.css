@@ -11,7 +11,7 @@
 }
 
 .navbar a{
-    color: #0078ff;
+    color: #4e4e4e;
     text-decoration: none;
 }
 
@@ -29,6 +29,7 @@
     flex-grow: 1;
     font-size: 26px;
     list-style: none;
+    font-weight: 500;
 }
 
 #home{
@@ -102,7 +103,7 @@
 .about-me p{
     font-size: 17px;
     text-align: justify;
-    width: 60%;
+    width: 70%;
     line-height: 24px;
 }
 
@@ -170,7 +171,7 @@
 }
 
 .portafolio-title{
-    font-size: 43px;
+    font-size: 40px;
     width: fit-content;
 }
 
@@ -258,6 +259,11 @@
     .skills-list p{
         font-size: 14px;
     }
+
+    .about-me h1 {
+        font-size: 35px;
+        margin-left: 25%;
+    }    
 }
 @media screen and (max-width: 420px) {
     #home h1{
@@ -267,4 +273,16 @@
     .projects{
         flex-direction: column;
     }
+
+    .skills{
+        align-items: center;
+    }
+
+    .skills h2{
+        margin-left: 0px;
+    }
+
+    .about-me h1 {
+        margin-left: 22%;
+    } 
 }
