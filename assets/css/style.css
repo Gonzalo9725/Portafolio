@@ -90,6 +90,7 @@ body{
 .profile{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .picture{
@@ -237,14 +238,28 @@ footer{
 
 footer .created{
     display: flex;
+    flex-direction: column;
     align-items: center;
     flex-grow: 1;
     justify-content: center;
     width: 26%;
 }
 
-.created a{
+.contactme{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contactme p{
+    margin: 15px 0px;
+    font-size: 26px;
+    font-weight: lighter;
+}
+
+.iconos a{
     margin-right: 16px;
+    text-decoration: none;
 }
 
 .created span i{
