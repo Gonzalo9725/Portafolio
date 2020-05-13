@@ -1,4 +1,7 @@
-$('.tooltip').tooltipster();
+$('.tooltip').tooltipster({
+	theme: 'tooltipster-shadow'
+});
+
 if ($('.text-slider').length == 1) {
     var typed_strings = $('.text-slider-items').text();
 		var typed = new Typed('.text-slider', {
